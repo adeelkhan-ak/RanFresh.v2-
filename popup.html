@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link
+  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  rel="stylesheet"
+  integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+  crossorigin="anonymous"
+/>
+
+
+  <style>
+
+
+body {
+  font-family: 'Supermercado One', cursive;
+background: #11998e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+padding:30px;
+
+}
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    form li + li {
+      margin-top: 1em;
+    }
+
+    label {
+      /* Uniform size & alignment */
+      font-size: 14px;
+      display: inline-block;
+      width: 90px;
+      text-align: right;
+    }
+    form {
+      /* Center the form on the page */
+      margin: 0 auto;
+      width: 400px;
+      /* Form outline */
+      padding: 1em;
+      border: 1px solid #ccc;
+      border-radius: 1em;
+    }
+    form li + li {
+  margin-top: 1em;
+}
+button.start {
+  background-color: #5d5e5d; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 12em;
+}
+button.stop {
+  background-color: #5d5e5d; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
+}
+
+      h2 {
+        font-size: 22px;
+        font-weight: 400;
+        margin: 0;
+        color: #000000;
+      }
+
+      a:link,
+      a:visited {
+        color: #000000;
+        outline: 0;
+        text-decoration: none;
+      }
+
+      img {
+        width: 30px;
+      }
+
+      .modal-header {
+        align-items: center;
+        border-bottom: 0.5px solid #dadada;
+      }
+
+      .modal-content {
+        padding: 0 22px;
+      }
+
+      .modal-icons {
+        border-top: 0.5px solid #dadada;
+        height: 50px;
+        width: 100%;
+      }
+
+      .logo {
+        padding: 16px;
+      }
+
+      .logo-icon {
+        vertical-align: text-bottom;
+        margin-right: 12px;
+      }
+
+      .version {
+        color: #444;
+        font-size: 18px;
+      }
+
+      .flex-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 22px;
+      }
+
+      .flex {
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out;
+        width: 180px;
+      }
+
+      .flex:hover {
+        opacity: 0.4;
+      }
+
+      .flex .fa {
+        font-size: 40px;
+        color: #2f5876;
+      }
+
+  </style>
+
+ 
+    <script type="text/javascript" src="popup.js"></script>
+  </head>
+  <body>
+    <h2><b>AUTO REFRESHER</b></h2></br>
+    <form action="/action_page.php">
+      <ul>
+        <li>
+          <label for="min"><b>Min seconds</b></label>
+          <input type="text" id="min" name="min" value="1" />
+        </li>
+        <li>
+          <label for="max"><b>Max seconds</b></label>
+          <input type="text" id="max" name="max" value="11" />
+        </li></ul>
+    </form>
+  </br>
+    <button    type="button" id="btn-submit" >Start</button> 
+    <button  type="button" id="btn-stop">Stop</button>
+    <p id="output"></p>
+    <p id="url"></p>
+    
+    <div class="modal-icons">
+      <div class="flex-container">
+        <div class="flex">
+          <a href="https://github.com/adeelkhan-ak" target="_blank">
+            <i class="fa fa-github" style="color:rgb(0, 0, 0);float:left;"></i>
+            <p>&ensp;follow me on github </p>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </body>
+</html>
