@@ -15,10 +15,11 @@
         "128": "icon128.png"
     },
     "background": {
-        "service_worker": "service_worker.js"
+        "service_worker": "service_worker.js",
+        "type": "module"
     },
     "action": {
-        "icons": {
+        "default_icon": {
             "16": "icon16.png",
             "48": "icon48.png",
             "128": "icon128.png"
@@ -26,8 +27,6 @@
         "default_title": "RanFresh",
         "default_popup": "popup.html"
     },
-
-    "content_security_policy": {},
     "host_permissions": [
         "https://ajax.googleapis.com/"
     ]
